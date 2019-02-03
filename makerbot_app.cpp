@@ -1,6 +1,3 @@
-// makerbot_app.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include "BinPack2D.hpp"
 #include "ModelAranger.hpp"
 #include "Model.hpp"
@@ -10,10 +7,10 @@
 // The model arranger with models with integer labels. For
 // now, we'll just label the models with their index, in the future
 // it could help to have actual names tied to the models.
-ModelAranger<std::vector<Model<int>>> model_arranger;
+ModelAranger<std::vector<Model<int> > > model_arranger;
 
 // Vector to hold the models as input/output to the model arranger
-std::vector<Model<int>> model_container;
+std::vector<Model<int> > model_container;
 
 int main(int argc, char**argv)
 {
