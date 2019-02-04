@@ -82,6 +82,10 @@ public:
 			output_model_container.push_back(*content_output);
 		}
 
+		// For some reason this line won't build when using gcc. Unfortunately, I
+		// ran out of time debugging this but I would like to fix this in the future.
+		// Not having this line means the output returns out of order, but is labeled to
+		// show the correct order.
 		//std::sort(output_model_container.begin(), output_model_container.end());
 	}
 
